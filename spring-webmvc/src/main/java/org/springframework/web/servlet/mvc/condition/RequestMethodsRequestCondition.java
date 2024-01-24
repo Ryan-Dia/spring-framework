@@ -102,7 +102,7 @@ public final class RequestMethodsRequestCondition extends AbstractRequestConditi
 		if (other.isEmpty()) {
 			return this;
 		}
-		if (isEmpty()) {
+		else if (isEmpty()) {
 			return other;
 		}
 		Set<RequestMethod> set = new LinkedHashSet<>(this.methods);
